@@ -1,5 +1,5 @@
 FROM python:alpine
 WORKDIR /app
-COPY 1.py /app
-CMD python /app/1.py
-CMD tail -f /dev/null
+COPY app.py /app
+RUN pip install -U Flask
+CMD python /app/app.py
