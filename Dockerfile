@@ -1,6 +1,5 @@
 FROM python:alpine
 WORKDIR /app
-RUN cd app
 RUN mkdir /app/templates
 COPY app.py /app
 COPY Bad.html /app/templates
