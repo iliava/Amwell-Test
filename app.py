@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import requests
 
 app = Flask('Scores Game')
 @app.route('/')
