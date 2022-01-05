@@ -9,7 +9,7 @@ def url_check():
             return render_template('Good.html')
         else:
             return render_template('bad.html')
-    except requests.exceptions.RequestException:
+    except:
         return render_template('bad.html')
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
